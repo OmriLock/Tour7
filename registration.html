@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צור חשבון</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+<script src="registration.js"></script>
+<header>
+    <div class="logo">
+        <img src="logo.jpg" alt="7Tours">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">בית</a></li>
+            <li><a href="categories.html">קטגוריות</a></li>
+            <li><a href="registration.html">הרשמה</a></li>
+            <li><a href="contact.html">צור קשר</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="outer-container">
+        <div class="gray-box">
+            <div class="form-container">
+                <h1 class="form-title">צור חשבון</h1>
+                <form>
+                    <label for="first-name">שם פרטי:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="הכנס את שמך הפרטי" required>
+
+                    <label for="last-name">שם משפחה:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="הכנס את שם משפחתך" required>
+
+                    <label for="phone">טלפון:</label>
+                    <input type="text" id="phone" name="phone" placeholder="הכנס את מספר הטלפון שלך" required>
+
+                    <label for="email">מייל:</label>
+                    <input type="email" id="email" name="email" placeholder="הכנס את כתובת המייל שלך" required>
+
+                    <label for="password">סיסמה:</label>
+                    <input type="password" id="password" name="password" placeholder="הכנס סיסמה" required>
+
+                    <label for="age">גיל:</label>
+                    <input type="number" id="age" name="age" placeholder="הכנס את גילך" required>
+
+                    <button type="submit" class="submit-button">שלח</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>© כל הזכויות שמורות</p>
+</footer>
+</body>
+</html>
