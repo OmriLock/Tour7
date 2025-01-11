@@ -141,6 +141,34 @@ form textarea {
     background-color: #ff8700;
 }
 
+@keyframes sendLetter {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateY(-50px) translateX(30px) rotate(-20deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-200px) translateX(100px) rotate(-45deg);
+    }
+}
+
+.letter-animation {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 40px;
+    height: 30px;
+    background-color: #ffa500;
+    border-radius: 5px;
+    display: none;
+    animation: sendLetter 1s ease-out forwards;
+}
+
+
 footer {
     text-align: center;
     background-color: #333;
