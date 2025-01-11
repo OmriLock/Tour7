@@ -1,0 +1,90 @@
+/* סגנונות כלליים */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    max-height: 60px;
+    padding-left: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding-right: 2rem;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 1rem 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.about-hero {
+    position: relative;
+    background: url('about2.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: 80vh;
+    width: 100%; /* התאמה לרוחב המסך */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 0;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: right;
+    line-height: 1.6;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+footer {
+    background: #ff7f27;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

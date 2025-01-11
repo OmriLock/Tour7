@@ -23,7 +23,15 @@ header {
 
 header .logo img {
     max-height: 60px;
-    padding-left: 1rem;
+    padding-left: 5rem;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* מאפשר חלוקה שווה בין הלוגו, החיפוש, ושאר הפריטים */
+    justify-content: start;
 }
 
 header nav ul {
@@ -34,7 +42,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 1rem 1rem;
+    margin: 1rem 2rem;
 }
 
 header nav ul li a {
@@ -44,6 +52,35 @@ header nav ul li a {
     font-weight: bold;
 }
 
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    padding-right: 0.5rem;
+    margin-right: 2rem; /* ריווח בין החיפוש לתפריט */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    width: 250px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.search-bar img {
+    height: 20px;
+    width: 20px;
+}
 .hero {
     position: relative;
     background: url('background.jpg') no-repeat center center;
@@ -170,7 +207,7 @@ header nav ul li a {
 
 footer {
     margin-top: 2rem;
-    background: #333;
-    color: #e06b20;
-    padding: 1;
+    background: #e06b20;
+    color: white;
+    padding: 1rem;
 }
