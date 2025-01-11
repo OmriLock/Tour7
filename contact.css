@@ -91,14 +91,19 @@ header nav ul li a {
 }
 
 .form-title {
-    font-size: 24px;
-    margin: 0 auto 20px auto; /* ממרכז את הכותרת אופקית */
-    text-align: center;
-    background-color: #ff8c00;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
-    display: inline-block; /* מאפשר לכותרת לשמור על רוחב טבעי */
+    font-size: 32px;               /* Increase font size for a more prominent title */
+    font-weight: bold;             /* Emphasize the text */
+    text-align: center;            /* Keep text centered */
+    color: #fff;                   /* Maintain theme color for text */
+    background-color: #ff8c00;     /* Keep the theme background color */
+    padding: 15px 0;               /* Add vertical padding for spacing */
+    margin: 0 0 20px;              /* Reduce margin for better spacing with form */
+    border-radius: 5px;            /* Subtle rounding for elegance */
+    display: block;                /* Ensure title behaves as a heading, not inline */
+    box-shadow: none;
+    border: none;
+    letter-spacing: 1px;
+    text-decoration: underline;
 }
 
 form label {
@@ -139,6 +144,40 @@ form textarea {
 
 .submit-button:hover {
     background-color: #ff8700;
+}
+
+@keyframes envelopeAppearAndSend {
+    0% {
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(2) translateY(0) translateX(0) rotate(360deg); /* Make image larger */
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5) translateX(800px) translateY(-300px) rotate(720deg); /* Fly further out */
+        opacity: 0;
+    }
+}
+
+.envelope-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url('email.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 1000;
+}
+
+.play-animation {
+    animation: envelopeAppearAndSend 2s ease-out forwards;
 }
 
 footer {
