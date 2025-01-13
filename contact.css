@@ -22,6 +22,7 @@ header {
 
 header .logo img {
     max-height: 60px;
+<<<<<<< HEAD
     padding-left: 5rem;
 }
 
@@ -30,6 +31,14 @@ nav {
     display: flex;
     align-items: center;
     flex-grow: 1; /* מאפשר חלוקה שווה בין הלוגו, החיפוש, ושאר הפריטים */
+=======
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+>>>>>>> c36b71b618f9adf1cdd208d34c1e2364bd011f5d
     justify-content: start;
 }
 
@@ -51,13 +60,20 @@ header nav ul li a {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c36b71b618f9adf1cdd208d34c1e2364bd011f5d
 .search-bar {
     display: flex;
     align-items: center;
     border-bottom: 2px solid #333;
     padding-right: 0.5rem;
+<<<<<<< HEAD
     margin-right: 2rem; /* ריווח בין החיפוש לתפריט */
+=======
+    margin-right: 2rem;
+>>>>>>> c36b71b618f9adf1cdd208d34c1e2364bd011f5d
 }
 
 .search-bar input {
@@ -88,7 +104,7 @@ header nav ul li a {
     min-height: calc(100vh - 100px);
     background-color: #ffffff;
     padding: 20px;
-    background-image: url("logo.jpg");
+    background-image: url("images/logo.jpg");
 }
 
 .gray-box {
@@ -205,7 +221,7 @@ form textarea {
     left: 50%;
     width: 50px;
     height: 50px;
-    background-image: url('email.png');
+    background-image: url('images/email.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -219,11 +235,8 @@ form textarea {
 }
 
 footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 2rem;
+    background: #e06b20;
+    color: white;
+    padding: 1rem;
 }
