@@ -18,11 +18,17 @@
             <li><a href="registration.html">הרשמה</a></li>
             <li><a href="contact.html">צור קשר</a></li>
              <li><a href="About.html">אודותינו</a></li>
+
+
+
         </ul>
-         <div class="search-bar">
-        <input type="text" placeholder="הקלד את שם הסיור או הקטגוריה">
-        <button><img src="search-icon.png" alt="חיפוש"></button>
-        </div>
+        <div class="search-bar">
+    <input type="text" id="search-input" placeholder="הקלד את שם הסיור או הקטגוריה">
+    <button onclick="redirectToSearch()">
+        <img src="search-icon.png" alt="חיפוש">
+    </button>
+</div>
+
     </nav>
      <div class="logo">
         <img src="logo.jpg" alt="7Tours">
@@ -91,5 +97,15 @@
 <footer>
     <p>כל הזכויות שמורות &copy; 2024</p>
 </footer>
+ <script>
+        function redirectToSearch() {
+            const query = document.getElementById("search-input").value;
+            if (query.trim() !== "") {
+                window.location.href = `SearchResult.html?query=${encodeURIComponent(query)}`;
+            } else {
+                alert("אנא הזן מילת חיפוש");
+            }
+        }
+    </script>
 </body>
 </html>

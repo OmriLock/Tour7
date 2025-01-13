@@ -1,4 +1,3 @@
-/* סגנונות כלליים */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -81,26 +80,30 @@ header nav ul li a {
     height: 20px;
     width: 20px;
 }
-
+/* אזור תוצאות החיפוש */
 .search-results {
-    position: relative;
     background: url('background.jpg') no-repeat center center;
     background-size: cover;
     color: white;
-    height: 80vh;
+    height: 50vh; /* גובה תמונת הרקע */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 1rem;
     text-align: right;
+    position: relative;
+    z-index: 1; /* שומר על סדר האלמנטים */
 }
 
-.search-results h1 {
-    text-align: right;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #333;
+.result-item-container {
+    background: white;
+    padding: 2rem;
+    margin-top: -50px; /* מונע חפיפה עם הרקע */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2; /* מבטיח שהמוצרים יהיו מעל */
 }
 
 .result-item {
@@ -117,7 +120,7 @@ header nav ul li a {
     height: 150px;
     width: 150px;
     object-fit: cover;
-    border-right: 1px solid #ddd;
+    padding: 1rem;
 }
 
 .result-info {
@@ -145,10 +148,51 @@ header nav ul li a {
     background: #ff7f27;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1rem;
+    transition: 1s;
 }
 
 .button:hover {
-    background: #e06b20;
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 124, 27, 1) 17.8%, rgba(2, 235, 235, 1) 100%);
+    scale: 110%;
+}
+
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #ff7f27;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: 1s;
+}
+
+.button::after {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 124, 27, 1) 17.8%, rgba(2, 235, 235, 1) 100%);
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.button:active{
+    transform: scale(0.9) rotate(5deg);
+    background:radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 124, 27, 1) 17.8%, rgba(2, 245, 255, 1) 100%); ;
+    transition: 1s;
+}
+
+
+footer {
+    background: #ff7f27;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
