@@ -84,7 +84,7 @@ header nav ul li a {
     min-height: calc(100vh - 100px);
     background-color: #ffffff;
     padding: 20px;
-    background-image: url("images/logo.jpg");
+    background-image: url("images/camels.png");
 }
 
 .gray-box {
@@ -138,6 +138,13 @@ header nav ul li a {
     border: none;
     letter-spacing: 1px;
     text-decoration: underline;
+}
+
+.invitation{
+    font-size: 20px;               /* Increase font size for a more prominent title */
+    font-weight: bold;             /* Emphasize the text */
+    text-align: center;            /* Keep text centered */
+    color:black;
 }
 
 form label {

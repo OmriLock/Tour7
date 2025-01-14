@@ -9,93 +9,149 @@
 </head>
 
 <body>
-
-<header>
-     <div class="logo">
-        <img src="images/logo.jpg" alt="7Tours">
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">בית</a></li>
-            <li><a href="registration.html">הרשמה</a></li>
-            <li><a href="contact.html">צור קשר</a></li>
-             <li><a href="About.html">אודותינו</a></li>
-        </ul>
-        <div class="search-bar">
-    <input type="text" id="search-input" placeholder="הקלד את שם הסיור או הקטגוריה">
-    <button onclick="redirectToSearch()">
-        <img src="images/search-icon.png" alt="חיפוש">
-    </button>
-    </div>
-    </nav>
-
-</header>
-
-<main>
-    <section class="hero">
-        <h1>
-            <span class="orange-bg">בואו להכיר את סודותיה</span>
-            <span class="black-bg">של העיר באר שבע</span>
-        </h1>
-    </section>
-    <section class="gallery">
-        <h2 class="gallery-title">להנות מההיסטוריה</h2>
-        <div class="scroll-container">
-            <div class="image-container">
-                <img src="images/1.png" alt="מוזיאון האמנות">
-            </div>
-            <div class="image-container">
-                <img src="images/2.png" alt="באר אברהם">
-            </div>
-            <div class="image-container">
-                <img src="images/3.png" alt="מוזיאון באר שבע">
-            </div>
-            <div class="image-container">
-                <img src="images/1.png" alt="מרכז אנזק">
-            </div>
-            <div class="image-container">
-                <img src="images/2.png" alt="באר אברהם">
-            </div>
-            <div class="image-container">
-                <img src="images/3.png" alt="מוזיאון באר שבע">
-            </div>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="7Tours">
         </div>
-    </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">בית</a></li>
+                <li><a href="registration.html">הרשמה</a></li>
+                <li><a href="contact.html">צור קשר</a></li>
+                <li><a href="About.html">אודותינו</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="הקלד את שם הסיור או הקטגוריה">
+                <button onclick="redirectToSearch()">
+                    <img src="images/search-icon.png" alt="חיפוש">
+                </button>
+            </div>
+        </nav>
+    </header>
 
-    <section class="gallery">
-        <h2 class="gallery-title"> לנוח בשלווה</h2>
-        <div class="scroll-container">
-            <div class="image-container">
-                <img src="images/1.png" alt="פארק נחל באר שבע">
-            </div>
-            <div class="image-container">
-                <img src="images/2.png" alt="הפארק האוסטרלי">
-            </div>
-            <div class="image-container">
-                <img src="images/3.png" alt="פארק רמבם">
-            </div>
-            <div class="image-container">
-                <img src="images/1.png" alt="המכתש">
-            </div>
-            <div class="image-container">
-                <img src="images/2.png" alt="מתחם הקטר">
-            </div>
-            <div class="image-container">
-                <img src="images/3.png" alt="פארק נאות לון">
-            </div>
-            <div class="image-container">
-                <img src="images/3.png" alt="הפארק של רמות">
-            </div>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <h1 class="animated">
+                <span class="orange-bg">בואו להכיר את סודותיה</span>
+                <span class="black-bg">של העיר באר שבע</span>
+            </h1>
+        </section>
+        <section class="gallery">
+            <h2 class="gallery-title">להנות מההיסטוריה</h2>
 
+            <div class="scroll-container">
+                <div class="card animated">
+                    <img src="images/2.png" alt="מוזיאון האמנות">
+                    <div class="card-content">
+                        <h3>מוזיאון האמנות</h3>
+                        <p>סיור מדהים במוזיאון האמנות הייחודי המציג תערוכות אמנות מתחלפות.</p>
+                        <span class="price">מתאים לבני 14 ומעלה</span>
+                    </div>
+                </div>
+                <div class="card animated">
+                    <img src="images/1.png" alt="באר אברהם">
+                    <div class="card-content">
+                        <h3>באר אברהם</h3>
+                        <p>גלו את ההיסטוריה המרתקת של של אברהם אבינו, האב הרוחני של הדתות האברהמיות.</p>
+                        <span class="price">מתאים לכל הגילאים</span>
+                    </div>
+                </div>
+                <div class="card animated">
+                    <img src="images/3.png" alt="מוזיאון באר שבע">
+                    <div class="card-content">
+                        <h3>מוזיאון באר שבע</h3>
+                        <p>מוזיאון באר שבע הוא מוזיאון המציג היסטוריה מקומית וסיפורים מרתקים </p>
+                        <span class="price">מתאים לבני 14 ומעלה</span>
+                    </div>
+                </div>
+                 <div class="card animated">
+                    <img src="images/anzak.jpg" alt="מרכז אנזק">
+                    <div class="card-content">
+                        <h3>מרכז אנז"ק</h3>
+                        <p>  אתר מורשת ומוזיאון, המגולל את סיפורם של חיילי אנז”ק במלחמת העולם הראשונה.</p>
+                        <span class="price">מתאים לבני 14 ומעלה</span>
+                    </div>
+                </div>
+                 <div class="card animated">
+                    <img src="images/lunada.jpg" alt="לונדע - פארק המדע">
+                    <div class="card-content">
+                        <h3>לונדע - פארק המדע</h3>
+                           <p>מוזיאון חדשני ואינטראקטיבי עם 3 קומות של מרחבים, ידע ומשימות לכל המשפחה.</p>
+                        <span class="price">מתאים לכל המשפחה</span>
+                    </div>
+                </div>
+                 <div class="card animated">
+                      <img src="images/andarta.jpg" alt="אנדרטת חטיבת הנגב">
+                    <div class="card-content">
+                        <h3>אנדרטת חטיבת הנגב</h3>
+                        <p>אנדרטה המנציחה את פועלה של חטיבת הנגב של הפלמ"ח במלחמת העצמאות.</p>
+                        <span class="price">מתאים לכל הגילאים</span>
+                    </div>
+                </div>
+            </div>
 
-</main>
+             <h2 class="gallery-title">לנוח בשלווה</h2>
 
-<footer>
-    <p>כל הזכויות שמורות &copy; 2024</p>
+            <div class="scroll-container">
+                <div class="card animated">
+                    <img src="images/parkNahal.jpeg" alt="פארק נחל באר שבע">
+                    <div class="card-content">
+                        <h3>פארק נחל באר שבע</h3>
+                        <p>הפארק הגדול ביותר בעיר, שפשוט יש בו הכל. תבקרו ותיווכחו בעצמכם.</p>
+                        <span class="price">מתאים לכל הגילאים</span>
+                    </div>
+                </div>
+                <div class="card animated">
+                    <img src="images/AustralianSoldier.jpg" alt="פארק החייל האוסטרלי">
+                    <div class="card-content">
+                        <h3>פארק החייל האוסטרלי</h3>
+                        <p>פארק השעשועים הענק שנבנה בהשתתפות ממשלת אוסטרליה.</p>
+                        <span class="price">מתאים לכל הגילאים</span>
+                    </div>
+                </div>
+                <div class="card animated">
+                    <img src="images/ParkRamot.jpg" alt="פארק רמות">
+                    <div class="card-content">
+                        <h3>פארק רמות</h3>
+                        <p>פארק ירוק ומלבב עם מקומות ישיבה ומתקני שעשועים וספורט.</p>
+                        <span class="price">מתאים לכל הגילאים</span>
+                    </div>
+                </div>
+                 <div class="card animated">
+                    <img src="images/makhtesh1.jpg" alt="פארק המכתש">
+                    <div class="card-content">
+                        <h3>פארק המכתש</h3>
+                        <p>האגדה מספרת שבמיקום בו נמצא הפארק החדיש נפל פעם מטאור!</p>
+                        <span class="price">מתאים לכל הגילאים</span>
+                    </div>
+                </div>
+                 <div class="card animated">
+                    <img src="images/Katar.jpg" alt="מתחם הקטר 70414">
+                    <div class="card-content">
+                        <h3>מתחם הקטר</h3>
+                        <p>היסטוריה מקומית, מתחמי הסעדה ופנאי במתחם המיתולוגי.</p>
+                        <span class="price">מתאים לכל הגילאים</span>
+                    </div>
+                </div>
+                 <div class="card animated">
+                    <img src="images/parkNeotLon.jpg" alt="פארק נאות לון">
+                    <div class="card-content">
+                        <h3>פארק נאות לון</h3>
+                        <p>פארק עם מדשאה רחבה, מסלולי ריצה ומגרשי ספורט.</p>
+                        <span class="price">מתאים לכל הגילאים</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+    <p>כל הזכויות שמורות &copy; 2025</p>
+        <p> Created By Almog & Omri בניית אתרים</p>
 </footer>
- <script>
+
+    <script>
         function redirectToSearch() {
             const query = document.getElementById("search-input").value;
             if (query.trim() !== "") {
