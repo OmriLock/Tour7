@@ -81,15 +81,11 @@ header nav ul li a {
 }
 /* אזור תוצאות החיפוש */
 .search-results {
-<<<<<<< HEAD
-    background: url('background.jpg') no-repeat center center;
-=======
+     background: url('images/background.png') no-repeat center center;
     position: relative;
-    background: url('images/background.png') no-repeat center center;
->>>>>>> c36b71b618f9adf1cdd208d34c1e2364bd011f5d
     background-size: cover;
     color: white;
-    height: 50vh; /* גובה תמונת הרקע */
+    height: 70vh; /* גובה תמונת הרקע */
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -10,7 +10,7 @@
 
 <body>
 <header>
-    <div class="logo">
+     <div class="logo">
         <img src="images/logo.jpg" alt="7Tours">
     </div>
     <nav>
@@ -18,12 +18,15 @@
             <li><a href="index.html">בית</a></li>
             <li><a href="registration.html">הרשמה</a></li>
             <li><a href="contact.html">צור קשר</a></li>
-            <li><a href="About.html">אודותינו</a></li>
+             <li><a href="About.html">אודותינו</a></li>
+
         </ul>
         <div class="search-bar">
-            <input type="text" placeholder="הקלד את שם הסיור או הקטגוריה">
-            <button><img src="images/search-icon.png" alt="חיפוש"></button>
-        </div>
+    <input type="text" id="search-input" placeholder="הקלד את שם הסיור או הקטגוריה">
+    <button onclick="redirectToSearch()">
+        <img src="images/search-icon.png" alt="חיפוש">
+    </button>
+    </div>
     </nav>
 
 </header>
@@ -35,7 +38,7 @@
     <div class="result-item-container">
         <h1>תוצאות חיפוש עבור: המכתש</h1>
         <div class="result-item">
-            <img src="makhtesh1.jpg" alt="המכתש הגדול">
+            <img src="images/makhtesh1.jpg" alt="המכתש הגדול">
             <div class="result-info">
                 <h2>פארק המכתש</h2>
                 <p>המכתש בבאר שבע מציע נוף ייחודי ומרהיב לטיולים והיסטוריה. גלו את הסיפור מאחורי המכתש ובואו ליהנות מנקודות התצפית.</p>
@@ -43,7 +46,7 @@
             </div>
         </div>
         <div class="result-item">
-            <img src="makhtesh2.jpg" alt="המכתש הקטן">
+            <img src="images/makhtesh2.jpg" alt="המכתש הקטן">
             <div class="result-info">
                 <h2>סדנת יוגה בפארק המכתש</h2>
                 <p>סדנת יוגה בפארק המכתש המדהים זה אירוע חוויתי ופופולרי ביותר בקרב חובבי החופש והטבע עם נוף עוצר נשימה.</p>
@@ -52,7 +55,6 @@
         </div>
     </div>
 </main>
-<<<<<<< HEAD
 <script>
     // קריאת הפרמטר מה-URL
     const params = new URLSearchParams(window.location.search);
@@ -65,9 +67,7 @@
         document.getElementById("search-title").textContent = "לא הוזן חיפוש";
     }
 </script>
-=======
 
->>>>>>> c36b71b618f9adf1cdd208d34c1e2364bd011f5d
 <footer>
     <p>כל הזכויות שמורות &copy; 2024</p>
 </footer>

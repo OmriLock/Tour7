@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-<<<<<<< HEAD
-=======
 
->>>>>>> c36b71b618f9adf1cdd208d34c1e2364bd011f5d
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,40 +9,9 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-    <header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">בית</a></li>
-            <li><a href="categories.html">קטגוריות</a></li>
-            <li><a href="registration.html">הרשמה</a></li>
-            <li><a href="contact.html">צור קשר</a></li>
-             <li><a href="About.html">אודותינו</a></li>
-        </ul>
-         <div class="search-bar">
-        <input type="text" placeholder="הקלד את שם הסיור או הקטגוריה">
-        <button><img src="search-icon.png" alt="חיפוש"></button>
-        </div>
-    </nav>
-     <div class="logo">
-        <img src="logo.jpg" alt="7Tours">
-    </div>
-</header>
-    <main>
-        <section class="about-hero">
-            <h1>אודותינו</h1> <!-- כותרת גדולה וברורה -->
-        </section>
-        <section class="about-content">
-                       <p>
-                <h2>!7Tours -ברוכים הבאים ל </h2>
-                <br>
-                האתר שלנו נועד להפוך את חוויית התכנון של סיורים וטיולים בבאר שבע והסביבה לפשוטה, נוחה ומהנה.
-                .הוא הכלי המושלם לתכנון יום טיולים מרתק המשלב סיורים מודרכים, עצירות ביניים, וטיולים עצמאיים – הכול במקום אחד! האתר מאפשר למשתמשים לתכנן לו"ז יומי מותאם אישית הכולל סיורים ונקודות עניין, לשמור את הלו"ז ולגשת אליו בכל עת, וכן להתעדכן בזמן אמת בזמינות הסיורים על פי מדריכים וביקוש. לפני הטיול, תשלח המערכת תזכורות מותאמות אישית, כדי להבטיח שהכול מוכן
-=======
 
 <header>
-<div class="logo">
+     <div class="logo">
         <img src="images/logo.jpg" alt="7Tours">
     </div>
     <nav>
@@ -53,14 +19,18 @@
             <li><a href="index.html">בית</a></li>
             <li><a href="registration.html">הרשמה</a></li>
             <li><a href="contact.html">צור קשר</a></li>
-            <li><a href="About.html">אודותינו</a></li>
+             <li><a href="About.html">אודותינו</a></li>
+
+
+
         </ul>
         <div class="search-bar">
-            <input type="text" placeholder="הקלד את שם הסיור או הקטגוריה">
-            <button><img src="images/search-icon.png" alt="חיפוש"></button>
-        </div>
+    <input type="text" id="search-input" placeholder="הקלד את שם הסיור או הקטגוריה">
+    <button onclick="redirectToSearch()">
+        <img src="images/search-icon.png" alt="חיפוש">
+    </button>
+    </div>
     </nav>
->>>>>>> c36b71b618f9adf1cdd208d34c1e2364bd011f5d
 
 </header>
 
@@ -96,7 +66,16 @@
 <footer>
     <p>כל הזכויות שמורות &copy; 2024</p>
 </footer>
-
+<script>
+        function redirectToSearch() {
+            const query = document.getElementById("search-input").value;
+            if (query.trim() !== "") {
+                window.location.href = `SearchResult.html?query=${encodeURIComponent(query)}`;
+            } else {
+                alert("אנא הזן מילת חיפוש");
+            }
+        }
+    </script>
 </body>
 
 </html>
