@@ -17,7 +17,7 @@ The website is for planning a day of tours in and around Be'er Sheva
 ### Used to create a unified design theme for all pages on the website
 - Unified design language for pages
 - Same header and footer on all pages
-- Button animation on Search Result page
+- Button animation on search result page
 
 ## JavaScript
 
@@ -31,4 +31,3 @@ The website is for planning a day of tours in and around Be'er Sheva
 - **Age:** Between the range of 8 and 120</br>
 
 #### Triggers an animation on the contact page
-
