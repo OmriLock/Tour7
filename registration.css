@@ -8,7 +8,7 @@ body {
 
 header {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     background: #fff;
     padding: 1rem;
@@ -77,6 +77,87 @@ header nav ul li a {
     width: 20px;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+}
+
+.icon-btn img {
+    height: 30px;
+    width: 30px;
+}
+
+.icon-btn i {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+#loginForm input {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#loginForm button {
+    background-color: #ff7f27;
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#loginForm button:hover {
+    background-color: #e06b20;
+}
+
 .outer-container {
     display: flex;
     justify-content: center;
@@ -91,53 +172,57 @@ header nav ul li a {
     background-color: #e8ecec;
     width: 100%;
     max-width: 600px;
-    padding: 40px;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+    box-sizing: border-box;
 }
 
 .form-container {
     background-color: #fff;
-    padding: 20px;
+    padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .form-title {
-    font-size: 24px;
-    margin: 0 auto 20px auto; /* ממרכז את הכותרת אופקית */
+    font-size: 1.5rem;
+    margin: 0 auto 1rem auto;
     text-align: center;
     background-color: #ff8c00;
     color: #fff;
-    padding: 10px 20px;
+    padding: 0.8rem;
     border-radius: 10px;
-    display: inline-block; /* מאפשר לכותרת לשמור על רוחב טבעי */
+    display: inline-block;
 }
 
 form label {
     display: block;
-    margin-top: 10px;
+    margin-top: 1rem;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 form input {
-    width: 95%;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 16px;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .submit-button {
     background-color: #ffa500;
     color: #fff;
     border: none;
-    padding: 10px;
-    font-size: 16px;
+    padding: 0.8rem;
+    font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 1rem;
     width: 100%;
 }
 
@@ -149,5 +234,7 @@ footer {
     margin-top: 2rem;
     background: #e06b20;
     color: white;
+    text-align: center;
     padding: 1rem;
+    font-size: 1rem;
 }

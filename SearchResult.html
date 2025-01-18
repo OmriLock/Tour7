@@ -9,8 +9,9 @@
 </head>
 
 <body>
+<script src="login.js"></script>
 <header>
-     <div class="logo">
+    <div class="logo">
         <img src="images/logo.jpg" alt="7Tours">
     </div>
     <nav>
@@ -18,19 +19,31 @@
             <li><a href="index.html">בית</a></li>
             <li><a href="registration.html">הרשמה</a></li>
             <li><a href="contact.html">צור קשר</a></li>
-             <li><a href="About.html">אודותינו</a></li>
+            <li><a href="About.html">אודותינו</a></li>
 
         </ul>
         <div class="search-bar">
-    <input type="text" id="search-input" placeholder="הקלד את שם הסיור או הקטגוריה">
-    <button onclick="redirectToSearch()">
-        <img src="images/search-icon.png" alt="חיפוש">
-    </button>
-    </div>
+            <input type="text" id="search-input" placeholder="הקלד את שם הסיור או הקטגוריה">
+            <button onclick="redirectToSearch()">
+                <img src="images/search-icon.png" alt="חיפוש">
+            </button>
+        </div>
     </nav>
-
+    <button id="loginBtn" class="icon-btn">
+        <img src="images/login.png" alt="כניסה"/>
+    </button>
 </header>
-
+<div id="loginPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <h2>כניסה</h2>
+        <form id="loginForm">
+            <input type="email" id="login-email" placeholder="אימייל" required>
+            <input type="password" id="login-password" placeholder="סיסמה" required>
+            <button type="submit">התחבר</button>
+        </form>
+    </div>
+</div>
 <main>
     <section class="search-results">
 
@@ -41,7 +54,8 @@
             <img src="images/makhtesh1.jpg" alt="המכתש הגדול">
             <div class="result-info">
                 <h2>פארק המכתש</h2>
-                <p>המכתש בבאר שבע מציע נוף ייחודי ומרהיב לטיולים והיסטוריה. גלו את הסיפור מאחורי המכתש ובואו ליהנות מנקודות התצפית.</p>
+                <p>המכתש בבאר שבע מציע נוף ייחודי ומרהיב לטיולים והיסטוריה. גלו את הסיפור מאחורי המכתש ובואו ליהנות
+                    מנקודות התצפית.</p>
                 <a href="tour-details.html" class="button">פרטים נוספים</a>
             </div>
         </div>
@@ -49,7 +63,8 @@
             <img src="images/makhtesh2.jpg" alt="המכתש הקטן">
             <div class="result-info">
                 <h2>סדנת יוגה בפארק המכתש</h2>
-                <p>סדנת יוגה בפארק המכתש המדהים זה אירוע חוויתי ופופולרי ביותר בקרב חובבי החופש והטבע עם נוף עוצר נשימה.</p>
+                <p>סדנת יוגה בפארק המכתש המדהים זה אירוע חוויתי ופופולרי ביותר בקרב חובבי החופש והטבע עם נוף עוצר
+                    נשימה.</p>
                 <a href="tour-details.html" class="button">פרטים נוספים</a>
             </div>
         </div>

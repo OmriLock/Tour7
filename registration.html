@@ -9,7 +9,7 @@
 <body>
 <script src="registration.js"></script>
 <header>
-     <div class="logo">
+    <div class="logo">
         <img src="images/logo.jpg" alt="7Tours">
     </div>
     <nav>
@@ -17,24 +17,40 @@
             <li><a href="index.html">בית</a></li>
             <li><a href="registration.html">הרשמה</a></li>
             <li><a href="contact.html">צור קשר</a></li>
-             <li><a href="About.html">אודותינו</a></li>
+            <li><a href="About.html">אודותינו</a></li>
 
         </ul>
         <div class="search-bar">
-    <input type="text" id="search-input" placeholder="הקלד את שם הסיור או הקטגוריה">
-    <button onclick="redirectToSearch()">
-        <img src="images/search-icon.png" alt="חיפוש">
-    </button>
-    </div>
-    </nav>
+            <input type="text" id="search-input" placeholder="הקלד את שם הסיור או הקטגוריה">
+            <button onclick="redirectToSearch()">
+                <img src="images/search-icon.png" alt="חיפוש">
+            </button>
+        </div>
 
+    </nav>
+    <button id="loginBtn" class="icon-btn">
+        <img src="images/login.png" alt="כניסה"/>
+    </button>
 </header>
+
+<div id="loginPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <h2>כניסה</h2>
+        <form id="loginForm">
+            <input type="email" id="login-email" placeholder="אימייל" required>
+            <input type="password" id="login-password" placeholder="סיסמה" required>
+            <button type="submit">התחבר</button>
+        </form>
+    </div>
+</div>
+
 <main>
     <div class="outer-container">
         <div class="gray-box">
             <div class="form-container">
                 <h1 class="form-title">צור חשבון</h1>
-                <form>
+                <form id="registrationForm">
                     <label for="first-name">שם פרטי:</label>
                     <input type="text" id="first-name" name="first-name" placeholder="הכנס את שמך הפרטי" required>
 
@@ -44,8 +60,8 @@
                     <label for="phone">טלפון:</label>
                     <input type="text" id="phone" name="phone" placeholder="הכנס את מספר הטלפון שלך" required>
 
-                    <label for="email">מייל:</label>
-                    <input type="email" id="email" name="email" placeholder="הכנס את כתובת המייל שלך" required>
+                    <label for="email">אימייל:</label>
+                    <input type="email" id="email" name="email" placeholder="הכנס את כתובת האימייל שלך" required>
 
                     <label for="password">סיסמה:</label>
                     <input type="password" id="password" name="password" placeholder="הכנס סיסמה" required>
@@ -63,14 +79,14 @@
     <p align="center">כל הזכויות שמורות &copy; 2024</p>
 </footer>
 <script>
-        function redirectToSearch() {
-            const query = document.getElementById("search-input").value;
-            if (query.trim() !== "") {
-                window.location.href = `SearchResult.html?query=${encodeURIComponent(query)}`;
-            } else {
-                alert("אנא הזן מילת חיפוש");
-            }
+    function redirectToSearch() {
+        const query = document.getElementById("search-input").value;
+        if (query.trim() !== "") {
+            window.location.href = `SearchResult.html?query=${encodeURIComponent(query)}`;
+        } else {
+            alert("אנא הזן מילת חיפוש");
         }
-    </script>
+    }
+</script>
 </body>
 </html>
